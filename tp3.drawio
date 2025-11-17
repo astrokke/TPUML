@@ -1,0 +1,123 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" version="29.0.3">
+  <diagram name="Class Diagram Collège Les Sardines" id="1xGXmpyvgLatFRYhtPpj">
+    <mxGraphModel dx="2338" dy="883" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NkFabA4ZM-Wnwkhln1JZ-1" value="&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa; Eleve&#xa;&#xa;- nom : String&#xa;- prenom : String&#xa;- dateNaissance : Date&#xa;- lieuNaissance : String&#xa;- prevEtabNom : String&#xa;- prevEtabVille : String" style="shape=swimlane;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-30" y="45" width="220" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="NkFabA4ZM-Wnwkhln1JZ-2" value="&#xa;&#xa;&#xa;&#xa;&#xa;&#xa; Professeur&#xa;&#xa;&#xa;- nom : String&#xa;- prenom : String&#xa;- dateNaissance : Date&#xa;- lieuNaissance : String&#xa;- dateDiplome : Date" style="shape=swimlane;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="630" y="30" width="220" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="NkFabA4ZM-Wnwkhln1JZ-3" value="&#xa;&#xa; Matiere&#xa;&#xa;- nom : String" style="shape=swimlane;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="930" y="250" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NkFabA4ZM-Wnwkhln1JZ-4" value="&#xa;&#xa;&#xa;&#xa;&#xa;Année&#xa;&#xa;&#xa;- nom : String&#xa;- anneeScolaire : String&#xa;- dateRentree : Date&#xa;- heureRentree : Time" style="shape=swimlane;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-350" y="290" width="300" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="NkFabA4ZM-Wnwkhln1JZ-5" value="&#xa;&#xa;&#xa;Inscription&#xa;- dateInscription : Date" style="shape=swimlane;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-350" y="50" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="NkFabA4ZM-Wnwkhln1JZ-6" value="&#xa;&#xa;&#xa;&#xa;&#xa;Cours&#xa;&#xa; jour : String&#xa; heureDebut : Time&#xa; heureFin : Time&#xa; salle : String" style="shape=swimlane;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="10" y="485" width="260" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="NkFabA4ZM-Wnwkhln1JZ-7" value=" &#xa;&#xa;&#xa;Conseil De Classe&#xa;&#xa;&#xa;- nom : String&#xa;- date : Date" style="shape=swimlane;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-390" y="750" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NkFabA4ZM-Wnwkhln1JZ-8" value="&#xa;&#xa; &#xa;&#xa;Bulletin&#xa;&#xa; moyenneGenerale : Float&#xa;- appreciationGenerale : String" style="shape=swimlane;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="490" y="750" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="NkFabA4ZM-Wnwkhln1JZ-9" value="&#xa;&#xa;&#xa;&#xa;MatiereNote&#xa;&#xa;&#xa;- note : Float&#xa;- appreciation : String" style="shape=swimlane;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="630" y="460" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NkFabA4ZM-Wnwkhln1JZ-10" edge="1" parent="1" source="NkFabA4ZM-Wnwkhln1JZ-1" target="NkFabA4ZM-Wnwkhln1JZ-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NkFabA4ZM-Wnwkhln1JZ-11" value="1 Eleve - * Inscription" style="edgeLabel;html=1;align=center;" vertex="1" parent="NkFabA4ZM-Wnwkhln1JZ-10">
+          <mxGeometry x="0.5" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NkFabA4ZM-Wnwkhln1JZ-12" edge="1" parent="1" source="NkFabA4ZM-Wnwkhln1JZ-5" target="NkFabA4ZM-Wnwkhln1JZ-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NkFabA4ZM-Wnwkhln1JZ-13" value="* Inscription - 1 Année" style="edgeLabel;html=1;align=center;" vertex="1" parent="NkFabA4ZM-Wnwkhln1JZ-12">
+          <mxGeometry x="0.5" relative="1" as="geometry">
+            <mxPoint x="-4" y="-35" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NkFabA4ZM-Wnwkhln1JZ-16" edge="1" parent="1" source="NkFabA4ZM-Wnwkhln1JZ-2" target="NkFabA4ZM-Wnwkhln1JZ-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NkFabA4ZM-Wnwkhln1JZ-17" value="1 Professeur - * Matiere" style="edgeLabel;html=1;align=center;" vertex="1" parent="NkFabA4ZM-Wnwkhln1JZ-16">
+          <mxGeometry x="0.5" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NkFabA4ZM-Wnwkhln1JZ-18" edge="1" parent="1" source="NkFabA4ZM-Wnwkhln1JZ-4" target="NkFabA4ZM-Wnwkhln1JZ-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NkFabA4ZM-Wnwkhln1JZ-19" value="1 Année - 0..* Cours" style="edgeLabel;html=1;align=center;" vertex="1" parent="NkFabA4ZM-Wnwkhln1JZ-18">
+          <mxGeometry x="0.5" relative="1" as="geometry">
+            <mxPoint x="-15" y="-26" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NkFabA4ZM-Wnwkhln1JZ-20" edge="1" parent="1" source="NkFabA4ZM-Wnwkhln1JZ-6" target="NkFabA4ZM-Wnwkhln1JZ-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="410" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NkFabA4ZM-Wnwkhln1JZ-21" value="* Cours - 1 Matiere" style="edgeLabel;html=1;align=center;" vertex="1" parent="NkFabA4ZM-Wnwkhln1JZ-20">
+          <mxGeometry x="0.5" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NkFabA4ZM-Wnwkhln1JZ-22" edge="1" parent="1" source="NkFabA4ZM-Wnwkhln1JZ-7" target="NkFabA4ZM-Wnwkhln1JZ-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NkFabA4ZM-Wnwkhln1JZ-23" value="* ConseilDeClasse - 1Année" style="edgeLabel;html=1;align=center;" vertex="1" parent="NkFabA4ZM-Wnwkhln1JZ-22">
+          <mxGeometry x="0.5" relative="1" as="geometry">
+            <mxPoint x="-34" y="89" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NkFabA4ZM-Wnwkhln1JZ-24" edge="1" parent="1" source="NkFabA4ZM-Wnwkhln1JZ-8" target="NkFabA4ZM-Wnwkhln1JZ-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NkFabA4ZM-Wnwkhln1JZ-25" value="1 Bulletin - 1 Eleve" style="edgeLabel;html=1;align=center;" vertex="1" parent="NkFabA4ZM-Wnwkhln1JZ-24">
+          <mxGeometry x="0.5" relative="1" as="geometry">
+            <mxPoint x="93" y="106" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NkFabA4ZM-Wnwkhln1JZ-26" edge="1" parent="1" source="NkFabA4ZM-Wnwkhln1JZ-8" target="NkFabA4ZM-Wnwkhln1JZ-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NkFabA4ZM-Wnwkhln1JZ-27" value="1 ConseilDeClasse-* Bulletin&amp;nbsp;&amp;nbsp;" style="edgeLabel;html=1;align=center;rotation=0;" vertex="1" parent="NkFabA4ZM-Wnwkhln1JZ-26">
+          <mxGeometry x="0.5" relative="1" as="geometry">
+            <mxPoint x="55" y="-36" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NkFabA4ZM-Wnwkhln1JZ-28" edge="1" parent="1" source="NkFabA4ZM-Wnwkhln1JZ-8" target="NkFabA4ZM-Wnwkhln1JZ-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NkFabA4ZM-Wnwkhln1JZ-29" value="1 Bulletin - * MatiereNote" style="edgeLabel;html=1;align=center;" vertex="1" parent="NkFabA4ZM-Wnwkhln1JZ-28">
+          <mxGeometry x="0.5" relative="1" as="geometry">
+            <mxPoint y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NkFabA4ZM-Wnwkhln1JZ-30" edge="1" parent="1" source="NkFabA4ZM-Wnwkhln1JZ-9" target="NkFabA4ZM-Wnwkhln1JZ-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NkFabA4ZM-Wnwkhln1JZ-31" value="* MatiereNote - 1 Matiere" style="edgeLabel;html=1;align=center;" vertex="1" parent="NkFabA4ZM-Wnwkhln1JZ-30">
+          <mxGeometry x="0.5" relative="1" as="geometry">
+            <mxPoint x="-42" y="12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NkFabA4ZM-Wnwkhln1JZ-32" edge="1" parent="1" source="NkFabA4ZM-Wnwkhln1JZ-9" target="NkFabA4ZM-Wnwkhln1JZ-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NkFabA4ZM-Wnwkhln1JZ-33" value="* MatiereNote - 1 Professeur (auteur)" style="edgeLabel;html=1;align=center;rotation=-90;" vertex="1" parent="NkFabA4ZM-Wnwkhln1JZ-32">
+          <mxGeometry x="0.5" relative="1" as="geometry">
+            <mxPoint x="-69" y="43" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
