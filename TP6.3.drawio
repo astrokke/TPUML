@@ -1,0 +1,52 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram name="Page-1" id="JauCAS8EiQkgZA2CQDvs">
+    <mxGraphModel dx="570" dy="336" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="rZ-ujqf0mNEhBPPMrQSD-1" value=":jury" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;" vertex="1" parent="1">
+          <mxGeometry x="110" y="140" width="20" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="rZ-ujqf0mNEhBPPMrQSD-2" value=":SI" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="340" y="140" width="100" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="rZ-ujqf0mNEhBPPMrQSD-3" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="rZ-ujqf0mNEhBPPMrQSD-2">
+          <mxGeometry x="45" y="70" width="10" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="rZ-ujqf0mNEhBPPMrQSD-6" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="rZ-ujqf0mNEhBPPMrQSD-2">
+          <mxGeometry x="50" y="121" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rZ-ujqf0mNEhBPPMrQSD-7" value="appliquer coefficient" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="rZ-ujqf0mNEhBPPMrQSD-6" parent="rZ-ujqf0mNEhBPPMrQSD-2" source="rZ-ujqf0mNEhBPPMrQSD-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="60" y="80" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="90" y="110" />
+              <mxPoint x="90" y="130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rZ-ujqf0mNEhBPPMrQSD-9" value="temps avec coef" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=-5;exitPerimeter=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="rZ-ujqf0mNEhBPPMrQSD-2">
+          <mxGeometry x="-0.3043" y="40" relative="1" as="geometry">
+            <mxPoint x="55" y="180" as="targetPoint" />
+            <mxPoint x="60" y="156" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="90" y="156" />
+              <mxPoint x="90" y="180" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rZ-ujqf0mNEhBPPMrQSD-4" value="enregistrerTempsCoureur(temps, coureur, étape)" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=5;" edge="1" target="rZ-ujqf0mNEhBPPMrQSD-3" parent="1" source="rZ-ujqf0mNEhBPPMrQSD-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="265" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rZ-ujqf0mNEhBPPMrQSD-5" value="http 200" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=-5;" edge="1" source="rZ-ujqf0mNEhBPPMrQSD-3" parent="1" target="rZ-ujqf0mNEhBPPMrQSD-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="335" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
